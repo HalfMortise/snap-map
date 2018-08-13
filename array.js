@@ -259,7 +259,6 @@ const sortedUsers = users.sort((a,b) => {console.log(a,b)
 });
 
 
-
 //console.log sorted users
 
 const a = "a";
