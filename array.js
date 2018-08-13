@@ -1,4 +1,11 @@
-let arr = [
+
+window.onload = function () {
+	arrayMap();
+}
+
+function arrayMap() {
+	let thisArray = document.getElementById("splice");
+	let thisArray = [
 	{
 		"id": 1,
 		"name": "Leanne Graham",
@@ -230,3 +237,5 @@ let arr = [
 		}
 	}
 ]
+
+}
