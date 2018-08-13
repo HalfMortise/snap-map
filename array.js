@@ -234,6 +234,7 @@ const users = [
 ]
 
 
+
 const mappedUsers = users.map(user => `${user.name}, ${user.username}, ${user.email}`)
 
 console.log(mappedUsers);
@@ -253,7 +254,12 @@ console.log(mappedUsers);
 console.log(mappedUsers);
 //console.log new user list without addresses
 
-const sortedUsers = users.sort((a,b) => a.email > b.email ? 1:-1);
+const sortedUsers = users.sort((a,b) => {console.log(a,b)
+	return a.email > b.email ? 1:-1
+});
+
+
+
 //console.log sorted users
 
 const a = "a";
