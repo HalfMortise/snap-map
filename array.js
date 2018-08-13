@@ -1,11 +1,6 @@
 
-window.onload = function () {
-	arrayMap();
-}
 
-function arrayMap() {
-	let thisArray = document.getElementById("splice");
-	let thisArray = [
+let kvArray = [
 	{
 		"id": 1,
 		"name": "Leanne Graham",
@@ -238,4 +233,13 @@ function arrayMap() {
 	}
 ]
 
-}
+let myMap = new Map(kvArray);
+
+myMap.get('id');
+myMap.get('username');
+myMap.get('email');
+myMap.get('phone');
+myMap.get('website');
+myMap.get('company');
+
+console.log(Array.from(myMap));
