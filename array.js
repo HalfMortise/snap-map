@@ -1,6 +1,6 @@
 
 
-let fullArray = [
+const users = [
 	{
 		"id": 1,
 		"name": "Leanne Graham",
@@ -233,13 +233,27 @@ let fullArray = [
 	}
 ]
 
-let myMap = new Map(fullArray);
 
-myMap.get('id');
-myMap.get('username');
-myMap.get('email');
-myMap.get('phone');
-myMap.get('website');
-myMap.get('company');
+const mappedUsers = users.map(user => `${user.name}, ${user.username}, ${user.email}`)
 
-console.log(Array.from(myMap));
+console.log(mappedUsers);
+
+
+
+//in the future, as a best practice don't change the array, output a new array
+
+//const mappedUsers = users.map(user => {
+
+	//normally a bad practice to directly modify the original array
+//	user.address = undefined;
+//	return user;
+//});
+
+
+console.log(mappedUsers);
+//console.log new user list without addresses
+
+const sortedUsers = users.sort((a,b) => a.email > b.email ? 1:-1);
+//console.log sorted users
+
+const a = "a";
