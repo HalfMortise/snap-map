@@ -1,6 +1,6 @@
 
 
-let kvArray = [
+let fullArray = [
 	{
 		"id": 1,
 		"name": "Leanne Graham",
@@ -233,7 +233,7 @@ let kvArray = [
 	}
 ]
 
-let myMap = new Map(kvArray);
+let myMap = new Map(fullArray);
 
 myMap.get('id');
 myMap.get('username');
